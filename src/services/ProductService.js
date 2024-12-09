@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_BASE_URL = "http://localhost:8080/products";
+const API_BASE_URL = "https://crud-backend-project-d0ea9f17eb7b.herokuapp.com/products";
 const ProductService = {
     getAllProducts: () => axios.get(API_BASE_URL),
     getProductById: (id) => axios.get(`${API_BASE_URL}/${id}`),
